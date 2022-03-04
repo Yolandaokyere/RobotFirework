@@ -1,46 +1,36 @@
-# CSS to the Rescue @cmda-minor-web 2021 - 2022
+# 🤖Firework Robot experience:
+There is no question that we humans love firework. It synthesize new wavelengths of color.This webpage let you re-experience the beauty of the big kaBOEM!
 
-Wij vinden het web fascinerend. De laatste jaren is CSS een volwassen en zeer krachtige taal geworden (niet langer een bottleneck - integendeel). Veel van de (nieuwe) **CSS-lekkernijen** worden echter nog niet ten volle benut. Sommige delen van de spec worden onterecht (nog) niet bemind, andere delen zijn zo groot en complex dat we mogelijkheden nog niet hebben doorgrond. Aan jou de mooie opdracht om de onontgonnen delen van de CSS-wereld in kaart te brengen.
+![robot vuurwerk](https://user-images.githubusercontent.com/97689634/156724174-ea31cd3e-95f7-4a80-b70e-a0c2b48af742.png)
 
-**In dit vierweekse vak ga je experimenteren met (voor jou) nieuwe CSS technieken - om daarna/mee een innovatieve, experimentele én aangename ervaring te creëren - met alleen vanilla HTML en vanilla CSS (frameworks, preprocessors, libraries en JavaScript zijn niet toegestaan).**
+# 📝Course Description
+This is a intro of the many selectors css can offer for building anything we want.
+The rules are no id or classes. These are only allowed to trigger the target selector & to link labels to input.
 
-Goed om te weten: Het experiment wordt gewaardeerd - zelfs/zeker als het niet (helemaal) lukt. Voel je vrij om verder te gaan dan de CSS-technieken die je al beheerst.
+# 📈Process 1
+At first is was a struggle to replace the id & classes. I used <h1,<h2,<h3 ect instead of the div-element to define the different elements of the robot. This method wasn't given the expected results. By replacing the <h's elements with section and by using the before & after elements I got the following results;
+                                    
+![2022-02-17](https://user-images.githubusercontent.com/97689634/156725304-e5fe7a89-a1e6-452e-b217-e3afd88264fd.png)
 
-## Dingen om vooraf te doen
-- 🔱 **Fork** deze repository.
-- ✅ [**Enroll** je voor de minor via de courselector](https://icthva.sharepoint.com/sites/courseselector#/CourseSelector/web-design-and-development/2021-2022) (dan kun je je werk straks ook op [DLO](https://dlo.mijnhva.nl/d2l/home/324147) opleveren).
-- 📒 **Bekijk** het [programma](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Kick-off.pdf) (pdf 48MB), [het quizje](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Quizje.pdf) (pdf 2MB) en de [kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2122/docs/oefening.html) alvast even.
+# 📈Process 2
+During the holiday I have learned a lot about properties, root, values & how to make a linear formula. 
+Using the root propertie has been saving a lot of time to change values given to the elements. 
+Root-propertie:
+![2022-03-04 (69)](https://user-images.githubusercontent.com/97689634/156728804-a3f70059-3d3f-422d-a4d3-38b47aaf0198.png)
+Example how I use the root properties:
+![2022-03-04 (75)](https://user-images.githubusercontent.com/97689634/156734379-97e74a5d-136e-49f0-aa8b-48cf10bf3228.png)
 
-## Opdrachten
-Het vak bestaat uit:
-- [Een kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2122/oefening.html)
-- [De eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2122/index.html)
+Example how I used a linear formula with roots:
+![2022-03-04 (74)](https://user-images.githubusercontent.com/97689634/156734569-98bcb9a5-66a2-4540-a5f8-57a4bf6ccc0a.png)
 
-De [beoordelingscriteria voor de eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2122/beoordelingsformulier.html) op een rijte.
+New HTML format:
+![2022-03-04 (18)](https://user-images.githubusercontent.com/97689634/156730323-ddc017fc-dd78-4860-ad36-3359c0cb71ad.png)
 
-## Themasessies
-Schrijf je in het [CSSttR channel](https://teams.microsoft.com/l/channel/19%3a1261f148f4a14a788c98784a96d361c4%40thread.tacv2/03%2520-%2520CSS%2520to%2520the%2520Rescue?groupId=36b2af3f-d616-4e89-b714-f45196f2a6ad&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7) bij 'Files' in de 'Indeling en Planning' Excel in voor zowel woensdag als donderdag in voor een themasessie naar je keuze (1 per dag):
-- [Materiaal voor de themasessies](https://cmda-minor-web.github.io/css-to-the-rescue-2122/themas.html)
+The head of the robot is not responsive. I have struggles fixing this:
+![2022-03-04 (12)](https://user-images.githubusercontent.com/97689634/156730589-83be4650-7361-4093-b6a7-b2ec09ebccf0.png)
 
-## Programma
-Het vak beslaat 4 weken. Bekijk de [kick-off presentatie](https://cmda-minor-web.github.io/css-to-the-rescue-2122/files/CSSttR-2122-Kick-off.pdf) (pdf 48MB). 
+  
 
-In Teams vind je het [CSSttR channel](https://teams.microsoft.com/l/channel/19%3a1261f148f4a14a788c98784a96d361c4%40thread.tacv2/03%2520-%2520CSS%2520to%2520the%2520Rescue?groupId=36b2af3f-d616-4e89-b714-f45196f2a6ad&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7) bij 'Files' de Excel met de 'Indeling en Planning'. Daar schrijf je je ook in voor themasessies en het eindgesprek.
-
-Colleges, lessen en gesprekken vinden plaats in het TTH (4e verdieping :-).
-
-## Docenten
-- Vasilis van Gemert
-- Sanne 't Hooft
-
-## Leerdoelen
-- Je kunt experimenteren met (voor jou) nieuwe css-technieken - om de mogelijkheden op waarde te schatten en te gebruiken waar gepast.
-- Je hebt begrip van de volle kracht en mogelijkheden van CSS. Je laat zien dat CSS meer kan dan allen web pages 'stylen'.
-- Je hebt begrip van de interactie-technieken van CSS (en HTML). De UX is aangenaam bruikbaar binnen de gekozen context(en).
-- Je hebt begrip hoe progressive enhancement elegant toe te passen. Je laat zien dat je cascade, inheritance en specificity kunt toepassen.
-
-
-## De Selector First CSS & No JS aanpak
-Het **eerste uitgangspunt** is dat je *geen* ID's en classes gebruikt. Niet omdat ze niet nuttig zijn, maar om te oefenen met de [vele CSS selectoren](https://css-tricks.com/almanac/) die je tot je beschikking hebt. ID's mag je alleen gebruiken om de :target selector te triggeren en uiteraard om labels te koppelen aan inputs. En als het echt echt echt niet anders kan, heb je permissie om een enkele class toe te voegen.
-
-Een **tweede uitgangspunt** is dat je *geen* JavaScript gebruikt. Als iets niet kan met CSS, dan zal je iets anders moeten verzinnen om te maken. We onderzoeken de mogelijkheden van CSS in dit vak, en niet die van JS.
+# 📚Sources
+single div method;  https://www.educative.io/edpresso/3-secrets-behind-single-div-css-art 
+section method; https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
