@@ -1,0 +1,1 @@
+li.onclick = function(){shootingfirework};

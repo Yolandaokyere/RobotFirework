@@ -1,0 +1,357 @@
+:root {
+
+    --backgroundColor:rgb(2, 1, 14);
+    --fireColor1:#FFCC33;
+    --fireColor2:#3aff33;
+    --fireColor3:#FFFF66;
+    --neonColor1: 0em 0em 0.8em 0.05em rgba(244, 217, 245, 0.568);
+    --neonColor2: 0em 0em 0.8em 0.05em rgba(230, 238, 211, 0.568);
+    --neonColor3: 0em 0em 0.8em 0.05em rgba(66, 194, 211, 0.719);
+    --neonColor4: 0em 0em 0.8em 0.05em rgba(230, 47, 160, 0.801);
+
+    --headWidth: 10em;
+    --headHeight: calc(var(--headWidth) * 3);
+    --earWidth: 6em;
+    --earHeight: calc(var(--earWidth) * 3);
+    --fireWidth:.1em;
+    --fireHeight: calc(var(--fireWidth) * 100);
+
+    --border: 6px;
+    --circleColor:rgb(200 80 90);
+    --bigHead:rgb(80, 98, 100);
+    --smallHead:rgb(200 80 150);
+    --smileColor:rgb(189, 197, 77);
+    --eyeColor:rgb(0 0 0);
+    --bodyColor:rgb(98, 32, 100);
+    --earColor:rgb(221, 36, 36);
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+.container {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* box robot 1 in container */
+body section:nth-child(1) {
+position: absolute;
+width: 100%;
+height: 100%;
+}
+
+/* circle */
+body section:nth-child(2) { 
+    width: var(--headWidth);
+    height: var(--headWidth);
+    position: absolute;  
+    border-radius: 100%;
+    border: var(--border)solid;
+    background: var(--circleColor);
+    left: 50%;
+    transform: translate(-50%);  
+}
+
+/* bigHead */
+body section:nth-child(2)::before {
+    content:'';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background:var(--bigHead);
+    border-radius: 30%;
+    border: var(--border)solid;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+
+/* smallHead*/
+body section:nth-child(2)::after {
+    content:'';
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 10%;
+    border-radius: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: var(--border)solid;
+    background:var(--smallHead);
+}
+
+/* smile */
+body section:nth-child(3) {
+    width: calc(var(--headHeight)*.1);
+    height: calc(var(--headHeight)*.1);
+    position: absolute;
+    top: 10vw;
+    border-radius: 100%;
+    border: calc(var(--headHeight)*.012) solid transparent;
+    border-bottom-color: var(--smileColor);
+   
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* eye right */
+body section:nth-child(3)::before {
+    content: '';
+    width: 28%;
+    height: 28%;
+    position: absolute;
+    background: black;
+    border-radius: 100%;
+    left: -30%;
+}
+
+/* eye left */
+body section:nth-child(3)::after {
+    content: '';
+    width: 28%;
+    height: 28%;
+    position: absolute;
+    background: black;
+    border-radius: 100%;
+    right: -30%;
+}
+
+/* body */
+body section:nth-child(4) {
+width: calc(var(--headHeight)*.15);   
+height: calc(var(--headWidth)*.15);
+position: absolute;
+left: 50%;
+background:var(--bodyColor);
+border-radius: 25px 25px 30px 30px;
+border-bottom: 6px solid;
+top: 30vw;
+transform: translateX(-50%);
+}
+
+/* positioning ear */
+body section:nth-child(5) {
+    width: var(--headWidth);
+    position: absolute;
+    background: orange;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ear left */
+body section:nth-child(5)::after {
+    content: '';
+    width: calc(var(--earHeight)*.2);
+    height: calc(var(--earHeight)*.1);
+    position: absolute;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color:var(--earColor);
+    border: 8px;
+    top: 15vw;
+    right: 0%;
+    transform: translate(50%) translateY(-50%) rotate(90deg);
+}
+
+/* ear right  */
+body section:nth-child(5)::before {
+    content:'';
+    width: calc(var(--earHeight)*.2);
+    height: calc(var(--earHeight)*.1);
+    position: absolute;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: var(--earColor);
+    border: 8px;
+    top: 15vw;
+    left: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+ul{
+    list-style: none;
+}
+
+/* defining all the li firework explosion elements */
+li {
+    list-style: none;
+    width: calc(var(--fireWidth)*.3);
+    height: calc(var(--fireHeight)*.3);
+    position: absolute;
+    background-color: rgb(200 200 100 0);
+    left: 50%;
+    bottom: 40%;
+    transform-origin: 50% 100%;
+    
+    --rotation: 360deg;
+    --offset: 30deg;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: var(--fireColor1);
+    box-shadow: var(--neonColor1);
+    transform: translateY(150%);
+
+    animation-name: explosion;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; 
+}
+
+/* help ik wil dat de animatie afspeelt als ik over de robot hover */
+.container.li::before:hover {
+    animation-name: explosion;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;    
+} 
+
+@keyframes explosion {
+        0% {
+            transform: translateY(150%);
+            top:100%;
+            opacity: 100%;
+        }
+        33%,100% {
+            transform: translateY(-10%);
+            top:-50%;
+            opacity: 0%;
+        }
+      }
+      
+li:nth-child(0) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 0))translateY(-10%);
+}
+li:nth-child(1) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 1))translateY(-10%);
+}
+li:nth-child(2) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 2))translateY(-10%);
+}
+li:nth-child(3) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 3))translateY(-10%);
+}
+li:nth-child(4) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 4))translateY(-10%);
+}
+li:nth-child(5) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 5))translateY(-10%);
+}
+li:nth-child(6) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 6))translateY(-10%);
+}
+li:nth-child(7) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 7))translateY(-10%);
+}li:nth-child(8) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 8))translateY(-10%);
+}
+li:nth-child(9) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 9))translateY(-10%);
+}
+li:nth-child(10) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 10))translateY(-10%);
+}
+li:nth-child(11) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 11))translateY(-10%);
+}   
+li:nth-child(12) {
+transform: rotate(calc(var(--rotation) - var(--offset) * 12))translateY(-10%);
+}
+    
+/* position firework 2 */
+.firework2 li {
+    list-style: none;
+    width: calc(var(--fireWidth)*.5);
+    height: calc(var(--fireHeight)*.5);
+    position: absolute;
+    background-color: rgb(200 200 100 0);
+    left: 80%;
+    bottom: 70%;
+    transform-origin: 50% 100%;
+    
+    --rotation: 360deg;
+    --offset: 30deg;
+}
+/* firework 2 scale & animation */
+.firework2 li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: var(--fireColor2);
+    box-shadow: var(--neonColor2);
+    transform: translateY(150%);
+
+    animation-name: explosion;
+    animation-duration: 3s .7s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite; 
+    animation-delay: 2s;
+}
+
+/* position firework 3 */
+.firework3 li {
+    list-style: none;
+    width: calc(var(--fireWidth)*.5);
+    height: calc(var(--fireHeight)*.5);
+    position: absolute;
+    background-color: rgb(200 200 100 0);
+    left: 10%;
+    bottom: 70%;
+    transform-origin: 50% 100%;
+    
+    --rotation: 360deg;
+    --offset: 30deg;
+}
+/* firework 3 scale & animation */
+.firework3 li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: transparent;
+    box-shadow: var(--neonColor3);
+    transform: translateY(150%);
+
+    animation-name: explosion;
+    animation-duration: 5s .4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite; 
+    animation-delay: 1s;
+}
+
+/* position firework 4 */
+.firework4 li {
+    width: calc(var(--fireWidth)*.9);
+    height: calc(var(--fireHeight)*.9);
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
+    transform-origin: 50% 100%;
+    
+    --rotation: 360deg;
+    --offset: 30deg;
+}
+/* firework 4 scale & animation */
+.firework4 li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    /* border-radius: 100%; */
+    background-color: var(--fireColor2);
+    transform: translateY(150%);
+
+    animation-name: explosion;
+    animation-duration: 5s .2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite; 
+    animation-delay: 1.2s;
+}
