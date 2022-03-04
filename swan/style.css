@@ -137,15 +137,17 @@ body {
 }
 
 button {
- background-color: transparent;
+ background-color:transparent;
+ border-radius: 100%;
  z-index: 10;
- box-shadow:0em 0em 10em rgb(255 5 5);
+ /* filter: drop-shadow(0em 0em 3em rgb(255 5 5)); */
+ box-shadow:0em 0em .5em rgb(55 5 255);
  position: absolute;
  bottom:10%;
 }
 
 img{
-  width: 5em;
+  width: 4em;
 }
 
 .swanbackground {
@@ -238,11 +240,11 @@ img{
     animation:draaiende-rays 30s linear infinite;
 }
 
-@property --ray-deg {
-  syntax: '<angle>';
+/* @property --ray-deg { */
+  /* syntax: '<angle>';
   inherits: false;
   initial-value: 0turn;
-}
+} */
 
 @keyframes draaiende-rays {
   0% {
@@ -500,16 +502,16 @@ li {
 }
 
 /* Syntax property for animating the custom property*/
-@property --offset {
+/* @property --offset {
   syntax: '<angle>';
   inherits: false;
   initial-value: 0deg;
-}
-@property --rotation {
+} */
+/* @property --rotation {
   syntax: '<angle>';
   inherits: false;
   initial-value: 0deg;
-}
+} */
 
 /* Animation feathers */
 @keyframes movingFeathers {
