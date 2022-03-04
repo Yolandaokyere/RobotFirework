@@ -1,0 +1,644 @@
+:root {
+  /* variables for the neck*/
+  --neckWidth: 3.5vw;
+  --neckHeight: calc(var(--neckWidth) * 3);
+  /* variables for the wing */
+  --wingWidth: 12.5vw;
+  --wingHeigt: calc(var(--wingWidth) * 2);
+
+  /* day-time; starry bakground */
+  --starsBackground:0;
+  --twinklingBackground:0;
+  --cloudsBackground:0;
+  
+  /* day properties */
+  --dayBackground: lightskyblue;
+  --lakeColor:radial-gradient(
+    ellipse at 50% -20%, 
+    rgb(171, 209, 216) 0% 24%,
+    transparent 45% 100% 
+  ),
+  linear-gradient(
+    #00b9cc 10% 100%
+  );
+  --daySun: radial-gradient(
+    rgba(255, 237, 175, 0.8) 35%,
+    rgba(255, 237, 105, 0.2) 70%);
+  --dayGlow: 0em 0em 0.4em 0.15em rgba(255, 255, 60, 0.3);
+  --daySwanbody:rgb(255,192,203);
+  --dayBoxshadow:rgb(255,192,203);
+  --beack:rgba(255 0 0);
+  --wingColor:rgb(170,152,169);
+  --featherColor:rgb(255,192,203, .4);
+  --highlightBody:inset -0.25em -0.25em 0.3em rgb(0 0 0 / 0.5);
+  --highlightTailB:inset -0.25em -0.25em 0.15em rgb(0 0 0 / 0.5);
+  --highlightTailS:inset -0.15em -0.5em 0.2em rgb(0 0 0 / 0.25);
+  --Ray1: #ffc3 0deg 10deg;
+  --Ray2: #ffc0 20deg 40deg;
+  --Ray3: #ffc3 50deg 60deg;
+
+/* night properties */
+  --nightBackground: rgb(4, 4, 37);
+  --nightMoon: rgba(218, 204, 226, 0.993);
+  --nightGlow: 0em 0em 0.4em 0.15em rgba(255, 255, 60, 0.4);
+  --nightSwanbody: rgb(255 255 255);
+  --nightBeack:rgb(255 0 0);
+  --nightWingColor:rgb(0 0 0);
+  --nightFeatherColor:rgba(255, 255, 255, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Vaste variabelen voor de nek*/
+    --neckWidth: 3.5vw;
+    --neckHeight: calc(var(--neckWidth) * 3);
+  
+    /* Vaste variabelen voor de wing(vleugels)*/
+    --wingWidth: 12.5vw;
+    --wingHeigt: calc(var(--wingWidth) * 2);
+  
+    /* dark mode*/
+    /* Starry background */
+    --starsBackground:#000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+    --twinklingBackground:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
+    --cloudsBackground:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
+    --dayBackground: rgb(4, 4, 37);
+    --lakeColor:radial-gradient(
+    ellipse at 50% -20%, 
+    rgb(120, 151, 156) 0% 10%,
+    transparent 40% 100% 
+  ),
+  linear-gradient(
+    #020220 10% 100%
+  );
+  --daySun: radial-gradient(
+    rgba(203, 207, 221, 0.8) 35%,
+    rgba(211, 156, 243, 0.918) 70%);;
+  --dayGlow: 0em 0em 0.4em 0.3em rgba(232, 60, 255, 0.692);
+  --daySwanbody: rgb(255, 255, 255);
+  --beack:rgb(255 0 0);
+  --wingColor:rgb(0 0 0);
+  --featherColor:rgba(255, 255, 255, 0.4);
+  --highlightBody:inset -0.25em -0.25em 0.3em rgb(0 0 0 / 0.5);
+  --highlightTailB:inset -0.25em -0.25em 0.15em rgb(0 0 0 / 0.5);
+  --highlightTailS:inset -0.15em -0.5em 0.2em rgb(0 0 0 / 0.25);
+  --Ray1: rgb(0 0 0 0) 0deg 10deg;
+  --Ray2: #ffc0 20deg 40deg;
+  --Ray3: #ffc3 50deg 60deg;
+  }
+  
+}
+.darkmode {
+      /* Vaste variabelen voor de nek*/
+      --neckWidth: 3.5vw;
+      --neckHeight: calc(var(--neckWidth) * 3);
+    
+      /* Vaste variabelen voor de wing(vleugels)*/
+      --wingWidth: 12.5vw;
+      --wingHeigt: calc(var(--wingWidth) * 2);
+    
+      /* dark mode*/
+      /* Starry background */
+      --starsBackground:#000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+      --twinklingBackground:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
+      --cloudsBackground:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
+      --dayBackground: rgb(4, 4, 37);
+      --lakeColor:radial-gradient(
+      ellipse at 50% -20%, 
+      rgb(120, 151, 156) 0% 10%,
+      transparent 40% 100% 
+    ),
+    linear-gradient(
+      #020220 10% 100%
+    );
+    --daySun: radial-gradient(
+      rgba(203, 207, 221, 0.8) 35%,
+      rgba(211, 156, 243, 0.918) 70%);;
+    --dayGlow: 0em 0em 0.4em 0.3em rgba(232, 60, 255, 0.692);
+    --daySwanbody: rgb(255, 255, 255);
+    --beack:rgb(255 0 0);
+    --wingColor:rgb(0 0 0);
+    --featherColor:rgba(255, 255, 255, 0.4);
+    --highlightBody:inset -0.25em -0.25em 0.3em rgb(0 0 0 / 0.5);
+    --highlightTailB:inset -0.25em -0.25em 0.15em rgb(0 0 0 / 0.5);
+    --highlightTailS:inset -0.15em -0.5em 0.2em rgb(0 0 0 / 0.25);
+    --Ray1: rgb(0 0 0 0) 0deg 10deg;
+    --Ray2: #ffc0 20deg 40deg;
+    --Ray3: #ffc3 50deg 60deg;
+}
+
+html {
+  height:100%;
+}
+body {
+  margin:0;
+  height: 100%;
+  overflow:hidden;
+}
+
+button {
+ background-color:transparent;
+ border-radius: 100%;
+ z-index: 10;
+ /* filter: drop-shadow(0em 0em 3em rgb(255 5 5)); */
+ box-shadow:0em 0em .5em rgb(55 5 255);
+ position: absolute;
+ bottom:10%;
+}
+
+img{
+  width: 4em;
+}
+
+.swanbackground {
+  width: 100%;
+  height:100%;
+  position: absolute;
+
+  background-color:var(--dayBackground);
+
+
+}
+
+.lake {
+  width: 100%;
+  height: 33%;
+  background: var(--lakeColor);
+  position: absolute;
+  bottom: 0%;
+  z-index: 10;
+/* height,width, spreiding, oppacity */
+  box-shadow:inset 0em 9em 4em -7em rgb(0 0 100 / .7);
+  z-index: 2; 
+}
+/* bron;from codepen.io >> read.me */
+@import "compass/reset";
+
+.stars, .twinkling, .clouds {
+	position:absolute;
+	display:block;
+	top:0; bottom:30;
+	left:0; right:0;
+	width:100%; height:100%;
+  
+}
+
+/* image on top of the stars = moving mask */
+.stars {
+	z-index: 0;
+	background:var(--starsBackground);
+}
+
+@keyframes rotateStars {
+  0% {
+    --ray-deg:0turn;
+  }
+  100% {
+    --ray-deg:1turn;
+  }
+}
+
+.twinkling{
+	z-index: 1;
+	background:var(--twinklingBackground);
+	animation: move-twink-back 200s linear infinite;
+}
+
+.clouds{
+	z-index: 3;
+    background: var(--cloudsBackground);
+	  animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+	from {background-position:0 0;}
+	to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+	from {background-position:0 0;}
+	to {background-position:10000px 0;}
+}
+.rays {
+  width: 100%;
+  height: 100%;
+
+  background-image: 
+    radial-gradient(
+      circle at 50% calc(20% + 5vmax),
+      var(--dayBackground),
+      transparent 25%,
+      var(--dayBackground) 70%
+    ),
+    repeating-conic-gradient(
+      from var(--ray-deg) at 50% calc(20% + 5vmax),
+      var(--Ray1),
+      var(--Ray2),
+      var(--Ray3)
+    );
+
+    animation:draaiende-rays 30s linear infinite;
+}
+
+@property --ray-deg {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0turn;
+}
+
+@keyframes draaiende-rays {
+  0% {
+    --ray-deg:0turn;
+  }
+  100% {
+    --ray-deg:1turn;
+  }
+}
+
+.sun {
+  width: 10vmax;
+  aspect-ratio: 1/1;
+  position: absolute;
+  border-radius: 100%;
+  /* de glowrand effect */
+  background: var(--daySun);
+  box-shadow: var(--dayGlow);
+  left: calc(50% - 5vmax);
+  top: 20%;
+  z-index: 4;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Positioning all elements of the swan in the main*/
+main {
+  width: 100%;
+  height:100%;
+  position: absolute;
+  display: grid;
+  place-items: center;
+}
+
+/* swan = face, body & wingblock. all elements of the swan.*/
+.swan {
+  background-color: rgb(0 0 0 0);
+  width: 50%;
+  aspect-ratio: 1/1;
+  position: relative;
+  bottom: -15%;
+  /* met bottom 10 calc 50% en correctie -5em zet ik de swan precies in het midden */
+}
+
+/* face = eye + beak + faceblack. all elements of the face */
+.face {
+  width: 13%;
+  aspect-ratio: 1/1;
+  background-color: var(--daySwanbody);
+  border-radius: 100%;
+  /* centering the face with the body */
+  position: absolute;
+  left: 31%;
+  top: 30%;
+  transform: translate(-50%, 0%);
+  z-index: 52;
+}
+
+.beak {
+  width: 25%;
+  aspect-ratio: 1/1;
+  background-color: var(--beack);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  transform: rotate(210deg);
+  position: absolute;
+  top: 80%;
+  right: 76%;
+}
+
+.eye {
+  width: 15%;
+  aspect-ratio: 1/1;
+  background-color: rgb(0 0 0);
+  border-radius: 100%;
+  position: absolute;
+  left: 44%;
+  top: 45%;
+  z-index:54;
+}
+
+.faceblack {
+  width: 100%;
+  aspect-ratio: 1/1;
+  /* background-color: rgb(251, 255, 0); */
+  position: absolute;
+  border-radius: 100%;
+  /* shapig the face with 2 mask; width,height at x,y */
+  background-image: 
+  radial-gradient(85% 85% at 15% 30%, var(--daySwanbody) 50%, transparent 51%), 
+  radial-gradient(circle at 100% 20%, var(--daySwanbody) 50%, black 51%);
+}
+
+.bodyswan {
+  width: 35%;
+  aspect-ratio: 3/2;
+  background-color: var(--daySwanbody);
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  z-index: 51;
+
+  /* some highlight on the body */
+  box-shadow: var(--highlightBody);
+}
+
+.neck {
+  border-style: solid;
+  width: var(--neckWidth);
+  height: var(--neckHeight);
+  position: absolute;
+  bottom: 59%;
+  left: -4%;
+  background-color: transparent;
+  border-radius: 50% 50% 69% 31% / 33% 33% 67% 67%;
+  border-width: calc(var(--neckWidth) * 0.7);
+  border-color: var(--daySwanbody) var(--daySwanbody) transparent transparent;
+  z-index: 2;
+}
+
+.tail {
+  width: 65%;
+  aspect-ratio: 1/1;
+  /* background-color:rgb(230 44 50); */
+  border-radius: 100%;
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+  z-index: 0;
+
+  /* some highlight on the tail */
+  box-shadow: var( --highlightTailB);
+
+  /* Voor de hap in de staart background-image:radial gradient* 
+  methode toegepast op de kleinere staart maar dan andersom met webkit-mask-image*/
+  background-image: radial-gradient(
+  circle at 10% 10%,
+  transparent 35%,
+  var(--daySwanbody) 35%
+  );
+}
+
+.tail::after {
+  content: "";
+  width: 65%;
+  aspect-ratio: 1/1;
+  background-color: var(--daySwanbody);
+  border-radius: 100%;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+
+   /* some highlight on the tail */
+   box-shadow: var(--highlightTailS);
+
+  -webkit-mask-image: radial-gradient(circle at 10% 10%, #fff0 45%, #fff 45%);
+  mask-image: radial-gradient(circle at 10% 10%, #fff0 45%, #fff 45%);
+}
+
+/* Wingblock = box for all elements of the wing & feathers*/
+.wingblock {
+  width: 100%;
+  aspect-ratio: 3/1.8;
+  background-color: rgb(transparent);
+  position: absolute;
+  z-index: 50;
+}
+
+/* The black wing, bottom */
+.wing {
+  width: 4%;
+  height: 60%;
+  position: absolute;
+  background-color: var(--wingColor);
+  border-radius: 25%;
+  top: 27%;
+  left: 60%;
+  transform: rotate(21deg);
+  z-index: 6;
+}
+/* The black wing, top */
+.wing::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--wingColor);
+  border-radius: 90% 0% 0% 10%;
+  bottom: 124%;
+  left: 308%;
+  /* Space between the wings*/
+  transform: translate(-320%, 29%) rotate(45deg);
+  transform-origin: bottom center;
+
+  /* Animation wing linking to class wing */
+  animation-name: wing;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes wing {
+  to {
+    transform: translate(-300%, 28%) rotate(75deg);
+  }
+}
+
+/* mirror black wings */
+.wing.right {
+  right: 0;
+}
+.wing.left {
+  left: 35%;
+  transform: scaleX(-1) rotate(20deg);
+}
+
+/* onnodig (denk ik) kan verwijderd worden!!*/
+/* .feather li div {
+  width: 800%;
+  height: 10%;
+  position: absolute;
+  background-color: var(--featherColor);
+  border-radius: 100%;
+  z-index: -1;
+} */
+
+/* box for feathers left/right */
+li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--featherColor);
+  border-radius: 100%;
+  bottom: -10%;
+  left: 10%;
+  transform-origin: top center;
+  z-index: 25;
+}
+
+/* custom property feathers left */
+.feather.left li {
+  --rotation: -145deg;
+  --offset: 10deg;
+  animation: movingFeathers 3s ease-out infinite alternate;
+}
+
+/* custom propery feathers right */
+.feather.right li {
+  --rotation: -145deg;
+  --offset: 10deg;
+  animation: movingFeathers 3s ease-out infinite alternate;
+}
+
+/* Syntax property for animating the custom property*/
+@property --offset {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+@property --rotation {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* Animation feathers */
+@keyframes movingFeathers {
+  from {
+    --rotation: -145deg;
+    --offset: 10deg;
+  }
+  to {
+    --rotation: -105deg;
+    --offset: 7deg;
+  }
+}
+
+/* feathers left */
+.feather.left li:nth-child(1) {
+  transform: rotate(var(--rotation + var(--offset) * 0));
+}
+
+.feather.left li:nth-child(2) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 1));
+}
+
+.feather.left li:nth-child(3) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 2));
+}
+
+.feather.left li:nth-child(4) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 3));
+}
+
+.feather.left li:nth-child(5) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 4));
+}
+
+.feather.left li:nth-child(6) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 5));
+}
+
+.feather.left li:nth-child(7) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 6));
+}
+
+.feather.left li:nth-child(8) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 7));
+}
+
+.feather.left li:nth-child(9) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 8));
+}
+
+.feather.left li:nth-child(10) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 9));
+}
+
+.feather.left li:nth-child(11) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 10));
+}
+
+.feather.left li:nth-child(12) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 11));
+}
+.feather.left li:nth-child(13) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 12));
+}
+
+.feather.left li:nth-child(14) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 13));
+}
+.feather.left li:nth-child(15) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 14));
+} 
+
+/* feathers right */
+.feather.right li:nth-child(1) {
+  transform: rotate(var(--rotation + var(--offset) * 0));
+}
+
+.feather.right li:nth-child(2) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 1));
+}
+
+.feather.right li:nth-child(3) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 2));
+}
+
+.feather.right li:nth-child(4) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 3));
+}
+
+.feather.right li:nth-child(5) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 4));
+}
+
+.feather.right li:nth-child(6) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 5));
+}
+
+.feather.right li:nth-child(7) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 6));
+}
+
+.feather.right li:nth-child(8) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 7));
+}
+
+.feather.right li:nth-child(9) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 8));
+}
+
+.feather.right li:nth-child(10) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 9));
+}
+
+.feather.right li:nth-child(11) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 10));
+}
+
+.feather.right li:nth-child(12) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 11));
+}
+.feather.right li:nth-child(13) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 12));
+}
+
+.feather.right li:nth-child(14) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 13));
+}
+.feather.right li:nth-child(15) {
+  transform: rotate(calc(var(--rotation) + var(--offset) * 14));
+} 
