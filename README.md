@@ -1,7 +1,7 @@
 # 🤖Firework Robot experience:
 There is no question that we humans love firework. It synthesize new wavelengths of color.This webpage let you re-experience the beauty of the big kaBOEM!
 
-![robot vuurwerk](https://user-images.githubusercontent.com/97689634/156724174-ea31cd3e-95f7-4a80-b70e-a0c2b48af742.png)
+![image](https://user-images.githubusercontent.com/97689634/157651165-c6ce5887-3265-4a60-a029-eba9bf1e6a76.png)
 
 # 📝Course Description
 This is a intro of the many selectors css can offer for building anything we want.
@@ -45,8 +45,22 @@ For the design of the ufoship, I have placed many circles in a row so that I can
 ![2022-03-10 (7)](https://user-images.githubusercontent.com/97689634/157649519-af09335b-e881-45f9-975d-3ea0bda7f617.png)
 ![2022-03-10 (3)](https://user-images.githubusercontent.com/97689634/157650029-2f47c30f-4153-4bdf-bb77-a3496b7b6167.png)
 
-This same method was also used to hide the extra page (black bar) on the bottom.
+The same method was also used to hide the extra page (black bar) on the bottom.
 ![2022-03-10 (4)](https://user-images.githubusercontent.com/97689634/157650564-eea2850d-162c-44a2-afd7-c7904df775ec.png)
+
+# 😌Finally
+![2022-03-10 (8)](https://user-images.githubusercontent.com/97689634/157651479-5d0e6c03-ea7c-4b51-b1cf-c80e9a2923d5.png)
+
+![robot vuurwerk](https://user-images.githubusercontent.com/97689634/156724174-ea31cd3e-95f7-4a80-b70e-a0c2b48af742.png)
+
+![2022-03-10 (9)](https://user-images.githubusercontent.com/97689634/157651683-445150dd-2c2f-444b-8445-400df84cbb6e.png)
+
+![2022-03-10 (11)](https://user-images.githubusercontent.com/97689634/157651818-502e5621-c4d6-4982-b0cd-a9e37e15e656.png)
+
+
+https://user-images.githubusercontent.com/97689634/157653480-1ac07d3e-a2b5-450d-b3f2-26e29fac177a.mp4
+
+
 
 # 📚Sources
 Single div method:  https://www.educative.io/edpresso/3-secrets-behind-single-div-css-art                                                                                             
@@ -54,5 +68,5 @@ Section method: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sectio
 Inspiration flying ufo: https://codepen.io/tuckermassad/pen/mYzEBB                                                                                                               
 Linear gradient colors:https://cssgradient.io/  
 HTML list: https://www.w3schools.com/html/html_lists.asp
-Positions in CSS: https://cssgradient.io/                                                                                                                                           
+Positions in CSS: https://cssgradient.io/                                                                                                                                                                                                                                                                                
 Overflow hidden: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
