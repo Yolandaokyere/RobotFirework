@@ -67,5 +67,7 @@ Single div method:  https://www.educative.io/edpresso/3-secrets-behind-single-di
 Section method: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section                                                                                                  
 Inspiration flying ufo: https://codepen.io/tuckermassad/pen/mYzEBB                                                                                                               
 Linear gradient colors:https://cssgradient.io/  
-HTML list: https://www.w3schools.com/html/html_lists.asp
-Positions in CSS: https://cssgradient.io/                                                                                                                                                                                                                                                                                                                   Overflow hidden: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow                                                                                                                                                                                                                                                                         
+HTML list: https://www.w3schools.com/html/html_lists.asp  
+
+Positions in CSS: https://cssgradient.io/   
+Overflow hidden: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow                                                                                                                                                                                                                                                                         
