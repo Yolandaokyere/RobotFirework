@@ -46,4 +46,8 @@ You can put the same value that is used for different elements together with the
 Single div method:  https://www.educative.io/edpresso/3-secrets-behind-single-div-css-art                                                                                             
 Section method: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section                                                                                                  
 Inspiration flying ufo: https://codepen.io/tuckermassad/pen/mYzEBB                                                                                                                
-Linear gradient colors:https://cssgradient.io/                                                                                                                                                                                                                                                                                                                     HTML list: https://www.w3schools.com/html/html_lists.asp
+Linear gradient colors:https://cssgradient.io/  
+
+HTML list: https://www.w3schools.com/html/html_lists.asp
+
+Positions in CSS: https://cssgradient.io/
