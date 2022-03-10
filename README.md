@@ -44,6 +44,7 @@ You can put the same value that is used for different elements together with the
 For the design of the ufoship, I have placed many circles in a row so that I can use them later when animating. Instead of a parent-child method, the desired effect could also be obtained with 'overflow:hidden'.See the before and after picture:
 ![2022-03-10 (7)](https://user-images.githubusercontent.com/97689634/157649519-af09335b-e881-45f9-975d-3ea0bda7f617.png)
 ![2022-03-10 (3)](https://user-images.githubusercontent.com/97689634/157650029-2f47c30f-4153-4bdf-bb77-a3496b7b6167.png)
+
 This same method was also used to hide the extra page (black bar) on the bottom.
 ![2022-03-10 (4)](https://user-images.githubusercontent.com/97689634/157650564-eea2850d-162c-44a2-afd7-c7904df775ec.png)
 
@@ -53,6 +54,5 @@ Section method: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sectio
 Inspiration flying ufo: https://codepen.io/tuckermassad/pen/mYzEBB                                                                                                               
 Linear gradient colors:https://cssgradient.io/  
 HTML list: https://www.w3schools.com/html/html_lists.asp
-
-Positions in CSS: https://cssgradient.io/
+Positions in CSS: https://cssgradient.io/                                                                                                                                           
 Overflow hidden: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
