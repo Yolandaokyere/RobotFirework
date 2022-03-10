@@ -1,5 +1,5 @@
 # 🤖Firework Robot experience:
-There is no question that we humans love firework. It synthesize new wavelengths of color.This webpage let you re-experience the beauty of the big kaBOEM!
+There is no question that we humans love firework. It synthesize new wavelengths of color.This webpage let you re-experience the beauty of the big kaBOEM! https://yolandaokyere.github.io/RobotFirework/robotfirework
 
 ![image](https://user-images.githubusercontent.com/97689634/157651165-c6ce5887-3265-4a60-a029-eba9bf1e6a76.png)
 
@@ -68,5 +68,4 @@ Section method: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sectio
 Inspiration flying ufo: https://codepen.io/tuckermassad/pen/mYzEBB                                                                                                               
 Linear gradient colors:https://cssgradient.io/  
 HTML list: https://www.w3schools.com/html/html_lists.asp
-Positions in CSS: https://cssgradient.io/                                                                                                                                                                                                                                                                                
-Overflow hidden: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+Positions in CSS: https://cssgradient.io/                                                                                                                                                                                                                                                                                                                   Overflow hidden: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow                                                                                                                                                                                                                                                                         
