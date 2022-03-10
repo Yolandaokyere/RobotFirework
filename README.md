@@ -8,12 +8,12 @@ This is a intro of the many selectors css can offer for building anything we wan
 The rules are no id or classes. These are only allowed to trigger the target selector & to link labels to input.
 
 # 📈Process 1
-At first is was a struggle to replace the id & classes. I used <h1,<h2,<h3 ect instead of the div-element to define the different elements of the robot. This method wasn't given the expected results. By replacing the <h's elements with section and by using the before & after elements I got the following results;
+At first is was a struggle to replace the id & classes. I used <h1,<h2,<h3 etcetera instead of the div-element to define the different elements of the robot. This method wasn't given the expected results. By replacing the <h's elements with section and by using the before & after elements I got the following results;
                                     
 ![2022-02-17](https://user-images.githubusercontent.com/97689634/156725304-e5fe7a89-a1e6-452e-b217-e3afd88264fd.png)
 
 # 📈Process 2
-During the holiday I have learned a lot about properties, root, values & how to make a linear formula. 
+During the holiday I have learned a lot about properties, root, values & how to make a linear formula in code. 
 Using the root propertie has been saving a lot of time to change values given to the elements. 
 Root-propertie:
 ![2022-03-04 (69)](https://user-images.githubusercontent.com/97689634/156728804-a3f70059-3d3f-422d-a4d3-38b47aaf0198.png)
@@ -29,8 +29,21 @@ New HTML format:
 The head of the robot is not responsive. I have struggles fixing this:
 ![2022-03-04 (12)](https://user-images.githubusercontent.com/97689634/156730589-83be4650-7361-4093-b6a7-b2ec09ebccf0.png)
 
-  
+# 📈Process 3
+The robot was not responsive because of the height and width of the container. These were to big. This was fixed by making the container smaller:
+Before and After pictures:
+![2022-03-09 (5)](https://user-images.githubusercontent.com/97689634/157640307-23e035c7-1ee9-4dfa-a0f6-707209cf32fe.png)
+![2022-03-09 (3)](https://user-images.githubusercontent.com/97689634/157640434-116ac85d-3927-4df0-bcb2-51fa07d06f0a.png)
+
+I wanted to start the animation of the firework when you hover over the robot. This is possible by reading the code from right to left! The animation of the firework = li. The container, div class contains the elements of the robot. This was done as followed:
+![2022-03-09 (7)](https://user-images.githubusercontent.com/97689634/157641623-8e2da4cb-1062-49f9-af3d-d22b35b91d1c.png)
+
+You can put the same value that is used for different elements together with the following method, see image:
+![2022-03-10 (5)](https://user-images.githubusercontent.com/97689634/157642613-f38c64ea-b6a2-4a92-b053-2adebdd5a823.png)
+
 
 # 📚Sources
-single div method;  https://www.educative.io/edpresso/3-secrets-behind-single-div-css-art 
-section method; https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+Single div method:  https://www.educative.io/edpresso/3-secrets-behind-single-div-css-art                                                                                             
+Section method: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section                                                                                                  
+Inspiration flying ufo: https://codepen.io/tuckermassad/pen/mYzEBB
+Linear gradient colors:                                                                                                                                                            HTML list: https://www.w3schools.com/html/html_lists.asp
